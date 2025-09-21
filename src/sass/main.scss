@@ -1,0 +1,33 @@
+// sort from importain
+// Utils
+@import 'utils/mixins';
+@import 'utils/variables';
+
+// Base Styles
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+
+// Layout
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+
+// Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+@import 'components/table';
+
+
+body {
+  background-color: $back-ground-color;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+

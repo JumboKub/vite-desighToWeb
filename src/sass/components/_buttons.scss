@@ -1,0 +1,40 @@
+// @extend .name class 
+// use all in that .name class
+// detailedest
+.search-box {
+  @include container;
+  gap: 2em;
+  &__group {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    @include flex-center
+  }
+  &__type {
+    display: flex;
+    margin-right: 1.5em;
+    @include search-black;
+  }
+  &__acc {
+    display: inline-block;
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      gap: 2em;
+      @include clear-link;
+      li+li {
+        padding: 7px;
+        border-radius: 5px;
+        background-image: linear-gradient($component-color, $cards-color);
+        background-image: linear-gradient(in lch,$thir-color, $component-color, $cards-color);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      a {
+        @include font-nav;
+        color: $font-secondary-color;
+      }
+    }
+  }
+}

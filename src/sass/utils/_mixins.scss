@@ -1,0 +1,121 @@
+// don't replenish yoursif (dry)
+// code that have same functions
+// to use mixin add to your class use @include (namefunction)
+
+@mixin flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin container {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+@mixin clear-link {
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin font-nav {
+  font-size: $font-size-nav;
+  font-weight: bold;
+}
+
+@mixin search-black {
+  flex-grow: 1;
+  input {
+    width: 100%;
+    padding: 5px 1em;
+    border: none;
+    border-radius: 5px;
+    color: $primary-color;
+    background-color: $component-color;
+    background-image: url('public/github (2).png');
+    background-repeat: no-repeat;
+    background-position: 10px 4px; 
+  }
+  input::placeholder {
+    padding: 30px;
+    font-size: $font-search;
+    font-weight: 400;
+    text-align: left; /* or left, or right */
+  }
+}
+
+@mixin search-white {
+  flex-grow: 1;
+  margin: 1em;
+  input {
+    width: 100%;
+    padding: 9px 2em;
+    border: none;
+    border-radius: 10px;
+    color: $component-color;
+    background-color: $primary-color;
+    background-image: url('public/github (2).png');
+    background-repeat: no-repeat;
+    background-position: 10px 4px; 
+  }
+  input::placeholder {
+    padding: 0;
+    font-size: $font-search;
+    font-weight: 400;
+    text-align: left; /* or left, or right */
+  }
+}
+
+@mixin cards-box {
+  align-items: center;
+  margin: 0 auto;
+  font-size: $font-component;
+  color: $font-primary-color;
+  border-radius: 7px;
+  white-space: nowrap;
+  strong {
+    padding: 1em;
+    margin: 0;
+    border-radius: 5px;
+    background-color: $component-color;
+  }
+  h2 {
+    padding: 1em;
+    font-size: $font-component;
+    color: $primary-color;
+    background-color: $component-color;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+}
+
+@mixin cards-inside-box {
+  align-items: center;
+  font-size: $font-component;
+  padding: 1em;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: $cards-color;
+  h3 {
+    margin: 1em auto;
+    font-size: $font-component;
+    color: $primary-color;
+  }
+  small {
+    color: $secondary-color;
+  }
+  img {
+    display: inline-block;
+    border-radius: 55555px;
+  }
+}

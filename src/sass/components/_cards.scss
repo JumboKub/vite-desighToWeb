@@ -1,0 +1,111 @@
+.box {
+  padding: 1em;
+  border-radius: 1em;
+  margin: auto;
+}
+
+.box-one {
+  @extend .box;
+  border-color: white;
+  background-color: black;
+}
+
+.main {
+  @include container;
+  @include clear-link;
+  width: 100%;
+  margin: 4em auto;
+  padding: 2em 0;
+  background-image: linear-gradient(rgb(0 0 0 / .9) 0 0),url(/public/imageRemove.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  &__group {
+    display: flex;
+    gap: 7em;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    h1 {
+      margin: 0.5em;
+      text-align: center;
+      color: $primary-color;
+    }
+  }
+  &__search {
+    @include search-white;
+    flex-grow: 0;
+    margin: 1em 0;
+  }
+  &__download {
+    align-items: center;
+    padding: 10px;
+    margin: 1em auto;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: linear-gradient($main-color) padding-box
+    ,conic-gradient(rgb(209, 6, 6), rgb(255, 255, 255), rgb(223, 0, 0)) border-box;
+    strong {
+      align-items: center;
+      justify-content: center;
+      color: $font-primary-color;
+    }
+  }
+  &__text {
+    align-items: center;
+    margin: 2em 0;
+    color: $font-primary-color;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 5em;
+    }
+  }
+
+}
+.main-right {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  gap: 1em;
+  width: 100%;
+  @include clear-link;
+  &__one {
+    @include cards-box;
+    width: 100%;
+
+  }
+  &__box-one {
+    @include cards-inside-box;
+    img {
+      width: 40px;
+    }
+  }
+  &__two {
+    width: 75%;
+    @include cards-box;
+  }
+  &__two-box {
+    @include cards-inside-box;
+    img {
+      width: 35px;
+    }
+  }
+  &__three {
+    width: 50%;
+    @include cards-box;
+  }
+  &__three-box {
+    @include cards-inside-box;
+      img {
+      width: 30px;
+    }
+  }
+}

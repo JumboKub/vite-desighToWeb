@@ -1,0 +1,58 @@
+.link-head {
+  display: flex;
+  flex-wrap: nowrap;
+  @include clear-link;
+  @include font-nav;
+  gap: 0.5em;
+  &__logo {
+    background-color: white;
+  }
+
+  &__bar {
+    width: 100%;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      a {
+        flex-wrap: nowrap;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.tage-home {
+  @include container;
+  &__bar {
+    display: flex;
+    @include clear-link;
+    @include font-nav;
+    gap: 0.5em;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    width: 100%;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      gap: 3em;
+      a {
+        flex-wrap: nowrap;
+        color: $primary-color;
+      }
+    }
+  }
+
+}
+
+
+
+
