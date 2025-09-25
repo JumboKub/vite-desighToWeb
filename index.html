@@ -143,141 +143,145 @@
     </div>
   </header>
   <!-- Sratistics pages -->
-  <section>
+  <section class="view">
     <div class="container">
-      <section>
-        <head>
-          <strong>Statistics</strong>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate optio expedita fugiat, unde nam.</small>
-        </head>
-        <section>
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Agent</th>
-                <th scope="col">Win%</th>
-                <th scope="col">KD</th>
-                <th scope="col">Avg.Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><img src="https://placehold.co50x50" alt="">Phoenix</th>
-                <td>23%</td>
-                <td>1.21</td>
-                <td>234</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <th scope="row"><img src="https://placehold.co25x25" alt="">Brimstone</th>
-                <td>13%</td>
-                <td>1.7</td>
-                <td>134</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <th scope="row"><img src="https://placehold.co25x25" alt="">Reyna</th>
-                <td>3.6%</td>
-                <td>0.7</td>
-                <td>414</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <th scope="row"><img src="https://placehold.co25x25" alt="">Sage</th>
-                <td>34.6%</td>
-                <td>1.27</td>
-                <td>252</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <a href="#">
-          <strong>View Statistics</strong>
-        </a>
-      </section>
-      <!-- Trannning Videos -->
-      <section>
-        <head>
-          <strong>Trannning Videos</strong>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illo repellendus quae quibusdam aliquid nam!</small>
-        </head>
-        <section>
-          <section>
-            <div>
-              <video src="#" controls="" height="70" width="115">
-                <source src="#" type="video/mp4">
-              </video>
-            </div>
-            <div>
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <ul>
-                <li>
-                  <img src="" alt="">
-                  <h4>John</h4>
-                </li>
-                <li>
-                  <h4>Ascent</h4>
-                </li>
-                <li>
-                  <span>●</span>
-                  <h4>Pro</h4>
-                </li>
-              </ul>
-            </div>
+      <section class="view__group">
+        <section class="view__statistic">
+          <div>
+            <strong>Statistics</strong>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate optio expedita fugiat, unde nam.</small>
+          </div>
+          <section class="view__table">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Agent</th>
+                  <th scope="col">Win%</th>
+                  <th scope="col">KD</th>
+                  <th scope="col">Avg.Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="https://placehold.co50x50" alt="">Phoenix</th>
+                  <td>23%</td>
+                  <td>1.21</td>
+                  <td>234</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="https://placehold.co25x25" alt="">Brimstone</th>
+                  <td>13%</td>
+                  <td>1.7</td>
+                  <td>134</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="https://placehold.co25x25" alt="">Reyna</th>
+                  <td>3.6%</td>
+                  <td>0.7</td>
+                  <td>414</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="https://placehold.co25x25" alt="">Sage</th>
+                  <td>34.6%</td>
+                  <td>1.27</td>
+                  <td>252</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
-          <section>
-            <div>
-              <video src="#" controls="" height="70" width="115">
-                <source src="#" type="video/mp4">
-              </video>
-            </div>
-            <div>
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <ul>
-                <li>
-                  <img src="" alt="">
-                  <h4>Scon</h4>
-                </li>
-                <li>
-                  <h4>Spilt</h4>
-                </li>
-                <li>
-                  <span>●</span>
-                  <h4>Medium</h4>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <div>
-              <video src="#" controls="" height="70" width="115">
-                <source src="#" type="video/mp4">
-              </video>
-            </div>
-            <div>
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <ul>
-                <li>
-                  <img src="" alt="">
-                  <h4>Nami</h4>
-                </li>
-                <li>
-                  <h4>Spilt</h4>
-                </li>
-                <li>
-                  <span>●</span>
-                  <h4>Easy</h4>
-                </li>
-              </ul>
-            </div>
+          <section class="view__bottom-box">
+            <a href="#">
+              <strong>View Statistics</strong>
+            </a>
           </section>
         </section>
-        <a href="#">
-          <strong>View Lineups</strong>
-        </a>
+        <!-- Trannning Videos -->
+        <section class="view__videos">
+          <head>
+            <strong>Trannning Videos</strong>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illo repellendus quae quibusdam aliquid nam!</small>
+          </head>
+          <section class="view__set-videos">
+            <section class="view__group-first-videos">
+              <div>
+                <video src="#" controls="" height="70" width="115">
+                  <source src="#" type="video/mp4">
+                </video>
+              </div>
+              <div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <ul>
+                  <li>
+                    <img src="" alt="">
+                    <h4>John</h4>
+                  </li>
+                  <li>
+                    <h4>Ascent</h4>
+                  </li>
+                  <li>
+                    <span>●</span>
+                    <h4>Pro</h4>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="view__group-second-videos">
+              <div>
+                <video src="#" controls="" height="70" width="115">
+                  <source src="#" type="video/mp4">
+                </video>
+              </div>
+              <div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <ul>
+                  <li>
+                    <img src="" alt="">
+                    <h4>Scon</h4>
+                  </li>
+                  <li>
+                    <h4>Spilt</h4>
+                  </li>
+                  <li>
+                    <span>●</span>
+                    <h4>Medium</h4>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="view__group-thir-videos">
+              <div>
+                <video src="#" controls="" height="70" width="115">
+                  <source src="#" type="video/mp4">
+                </video>
+              </div>
+              <div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <ul>
+                  <li>
+                    <img src="" alt="">
+                    <h4>Nami</h4>
+                  </li>
+                  <li>
+                    <h4>Spilt</h4>
+                  </li>
+                  <li>
+                    <span>●</span>
+                    <h4>Easy</h4>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+          <a href="#">
+            <strong>View Lineups</strong>
+          </a>
+        </section>
       </section>
     </div>
   </section>

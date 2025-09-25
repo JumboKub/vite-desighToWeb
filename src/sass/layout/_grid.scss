@@ -1,0 +1,40 @@
+.view {
+  @include container;
+  @include clear-link;
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__statistic {
+    align-items: center;
+    padding: 1em;
+    border: 1px solid $thir-color;
+    border-radius: 15px;
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      strong {
+        font-size: $font-web;
+        color: $font-primary-color;
+      }
+      small {
+        color: $font-secondary-color;
+      }
+    }
+  }
+  &__bottom-box {
+    text-align: center;
+    background-color: $component-color;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    a {
+      strong {
+        font-size: $font-search;
+        color: $font-primary-color;
+        text-align: center;
+      }
+    }
+  }
+
+}

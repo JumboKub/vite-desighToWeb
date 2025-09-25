@@ -17,6 +17,7 @@
   margin: 4em auto;
   padding: 2em 0;
   background-image: linear-gradient(rgb(0 0 0 / .9) 0 0),url(/public/imageRemove.png);
+  background-repeat: no-repeat;
   &__group {
     display: flex;
     gap: 7em;
