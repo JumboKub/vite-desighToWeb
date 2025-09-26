@@ -1,16 +1,18 @@
 // table statistics
 table {
+  width: 100%;
   border-collapse: collapse;
   border: 0;
   font-family: $font-family-base;
   font-size: $font-component;
   letter-spacing: 1px;
   color: $font-primary-color;
+  margin-bottom: 0.5em;
+  align-items: center;
 }
 
 thead,
 tfoot {
-  width: 100%;
   background-color: $component-color;
 }
 thead th:nth-child(n+2) {
@@ -20,11 +22,16 @@ thead th:nth-child(n+2) {
 th,
 td {
   border: 0;
-  padding: 8px 10px;
+  padding: 10px 30px;
 }
 
 th {
   text-align: left;
+  align-items: center;
+}
+th img {
+  display: inline;
+  align-items: center;
 }
 td:last-of-type {
   text-align: center;

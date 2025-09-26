@@ -5,15 +5,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3em;
   }
   &__statistic {
     align-items: center;
-    padding: 1em;
     border: 1px solid $thir-color;
     border-radius: 15px;
     div {
       display: flex;
       flex-wrap: wrap;
+      padding: 0.5em 2em;
+      margin-bottom: 0.5em;
       strong {
         font-size: $font-web;
         color: $font-primary-color;
@@ -24,6 +26,7 @@
     }
   }
   &__bottom-box {
+    padding: 0.5em;
     text-align: center;
     background-color: $component-color;
     border-bottom-left-radius: 15px;
@@ -36,5 +39,22 @@
       }
     }
   }
+
+  &__videos {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.5em 2em;
+      margin-bottom: 0.5em;
+      strong {
+        font-size: $font-web;
+        color: $font-primary-color;
+      }
+      small {
+        color: $font-secondary-color;
+      }
+    }
+  }
+
 
 }
