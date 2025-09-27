@@ -1,21 +1,11 @@
 import './sass/main.scss'
 
-function toggleList() {
-    // Access the List
-    const courses = document.getElementById("tageMenu");
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector(".tage-home__button");
+    const nav = document.querySelector(".tage-home__menu");
 
-    // Check the visibility
-    if (courses.style.display == "block") {
-        courses.style.display = "none"; // Hide the list
-    } else {
-        courses.style.display = "block"; // Display the list
-    }
-}
-
-// Hide the list on click outside the dropdown list
-window.onclick = function (event) {
-    if (!event.target.matches('.dropdown_button')) {
-        document.getElementById('courses_container')
-            .style.display = "none";
-    }
-}    
+    button.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+    button.classList.toggle("rotate");
+    });
+});
