@@ -29,9 +29,14 @@ th {
   text-align: left;
   align-items: center;
 }
-th img {
-  display: inline;
+tbody th:first-child {
+  display: flex;
   align-items: center;
+  gap: 8px;
+  img {
+    display: block;
+    align-items: center;
+  }
 }
 td:last-of-type {
   text-align: center;

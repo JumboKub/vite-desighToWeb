@@ -36,17 +36,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    img {
+      width: 2rem;
+    }
   }
   &__button {
-    font-size: 16px;
-    background: #333;
-    color: white;
+    top: 100%;
+    font-size: $font-icon;
+    color: $thir-color;
     border: none;
     cursor: pointer;
     padding: 0.5em 1em;
     display: flex;
     align-items: center;
     gap: 0.5em;
+    background: none;
   }
   &__button.rotate i {
     transform: rotate(180deg);
@@ -56,24 +60,22 @@
     top: 100%;   // appear right below button
     left: 0;
     right: 0;
-
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-
-    background: white;
     transition: max-height 0.4s ease, opacity 0.4s ease;
 
     ul {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      gap: 1em;
       padding: 1em;
       margin: 0;
       list-style: none;
 
       li a {
         padding: 1em;
-        color: black;
+        color: $font-primary-color;
         text-decoration: none;
       }
 
