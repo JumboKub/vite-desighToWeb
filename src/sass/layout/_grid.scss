@@ -56,5 +56,15 @@
     }
   }
 
-
+  &__set-videos {
+    margin: auto 0;
+    color: $font-primary-color;
+    font-size: $font-search;
+  }
+  &__group-first-videos {
+    display: flex;
+    video {
+      border-radius: 0.4rem;
+    }
+  }
 }
