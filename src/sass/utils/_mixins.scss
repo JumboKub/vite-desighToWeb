@@ -121,3 +121,7 @@
   }
 }
 
+@mixin videos-based {
+  display: flex;
+  gap: 1rem;
+}

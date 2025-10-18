@@ -3,18 +3,17 @@
   @include clear-link;
   &__group {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     gap: 3em;
   }
   &__statistic {
-    align-items: center;
     border: 1px solid $thir-color;
     border-radius: 15px;
+    padding: 1em 2em;
     div {
       display: flex;
       flex-wrap: wrap;
-      padding: 0.5em 2em;
       margin-bottom: 0.5em;
       strong {
         font-size: $font-web;
@@ -41,6 +40,10 @@
   }
 
   &__videos {
+    border: 1px solid $thir-color;
+    border-radius: 15px;
+    padding: 1em 2em;
+    
     div {
       display: flex;
       flex-wrap: wrap;
@@ -54,26 +57,29 @@
     }
   }
 
-  &__set-videos {
+  &__mater-videos {
     margin: 2rem 0;
     color: $font-primary-color;
     font-size: $font-search;
   }
-  &__group-first-videos {
+
+  &__child-group-videos {
     display: flex;
     gap: 1rem;
   }
-  &__group-play {
+  &__child-videos {
+    align-items: baseline;
     video {
       padding: 0;
       border-radius: 0.4rem;
     }
   }
-  &__group-text {
+  &__child-text {
     align-items: center;
     justify-content: left;
     ul {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: left;
       gap: 0.5rem;
       padding: 0;
